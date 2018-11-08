@@ -1,0 +1,400 @@
+@media screen and (min-width: 993px) {
+  body {
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-family: Roboto;
+    font-size: 14px; }
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 10px;
+    background-color: #ffffff;
+    padding: 10px; }
+  .grid {
+    display: grid; }
+  .side {
+    height: 100%;
+    background-color: #9a9a9a; }
+  progress {
+    height: 8px;
+    background-color: #b3b3b3; }
+  h1, h2, h3 {
+    margin: 10px;
+    margin-left: 0px;
+    align-content: center; }
+  p {
+    margin-top: 6.66667px;
+    margin-bottom: 6.66667px; }
+  .year {
+    padding-top: 5px;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 700; }
+  .leftside-main .leftside-contacts {
+    color: #333;
+    font-size: 16px;
+    text-indent: 10px; }
+    .leftside-main .leftside-contacts .profile-photo {
+      transition: transform 1s ease;
+      overflow: hidden;
+      position: relative; }
+      .leftside-main .leftside-contacts .profile-photo-item {
+        min-height: 300px;
+        width: 100%;
+        height: 100%; }
+        .leftside-main .leftside-contacts .profile-photo-item:hover {
+          transform: scale(1.2) translate(10px, 22px); }
+    .leftside-main .leftside-contacts .profile-info-items {
+      background-color: #b3b3b3;
+      margin: 0px;
+      grid-template-columns: 0.25fr 0.75fr;
+      transition: background-color 0.5s ease;
+      overflow: hidden;
+      position: relative; }
+      .leftside-main .leftside-contacts .profile-info-items:nth-child(1) {
+        border-bottom: 1px solid #808080; }
+      .leftside-main .leftside-contacts .profile-info-items:nth-child(2) {
+        border-bottom: 1px solid #808080; }
+      .leftside-main .leftside-contacts .profile-info-items:hover {
+        background-color: #d9d9d9; }
+      .leftside-main .leftside-contacts .profile-info-items .profile-info-img {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        opacity: 0.7; }
+      .leftside-main .leftside-contacts .profile-info-items .profile-info-contacts {
+        width: 100%;
+        margin: 0px;
+        align-content: center; }
+  .leftside-main .leftside-personal {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-personal-item {
+      grid-template-columns: 1fr 1fr; }
+  .leftside-main .leftside-qualities {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-qualities-item {
+      grid-template-columns: 1fr 1fr; }
+  .leftside-main .leftside-skills {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-skills-item {
+      grid-template-columns: 1fr 1fr; }
+  .rightside-main {
+    background-color: #ffffff; }
+    .rightside-main h3 {
+      background-color: #e6e6e6; }
+    .rightside-main .expirience-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .education-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .hobbies .hobbies-items {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-size: 13px; }
+      .rightside-main .hobbies .hobbies-items-img {
+        opacity: 0.6; } }
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-family: Roboto;
+    font-size: 14px; }
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    padding: 10px;
+    background-color: #ffffff; }
+  .grid {
+    display: grid; }
+  .side {
+    display: none; }
+  progress {
+    height: 8px;
+    background-color: #b3b3b3; }
+  h1, h2, h3 {
+    margin: 10px;
+    margin-left: 0px;
+    align-content: center; }
+  p {
+    margin-top: 6.66667px;
+    margin-bottom: 6.66667px; }
+  .year {
+    padding-top: 5px;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 700; }
+  .leftside-main .leftside-contacts {
+    color: #333;
+    font-size: 16px;
+    text-indent: 10px; }
+    .leftside-main .leftside-contacts .profile-photo {
+      transition: transform 1s ease;
+      overflow: hidden;
+      position: relative; }
+      .leftside-main .leftside-contacts .profile-photo-item {
+        min-height: 400px;
+        width: 100%;
+        height: 100%; }
+        .leftside-main .leftside-contacts .profile-photo-item:hover {
+          transform: scale(1.2) translate(10px, 22px); }
+    .leftside-main .leftside-contacts .profile-info-items {
+      background-color: #b3b3b3;
+      margin: 0px;
+      grid-template-columns: 0.25fr 0.75fr;
+      transition: background-color 0.5s ease;
+      overflow: hidden;
+      position: relative; }
+      .leftside-main .leftside-contacts .profile-info-items:nth-child(1) {
+        border-bottom: 1px solid #808080; }
+      .leftside-main .leftside-contacts .profile-info-items:nth-child(2) {
+        border-bottom: 1px solid #808080; }
+      .leftside-main .leftside-contacts .profile-info-items:hover {
+        background-color: #d9d9d9; }
+      .leftside-main .leftside-contacts .profile-info-items .profile-info-img {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        opacity: 0.7; }
+      .leftside-main .leftside-contacts .profile-info-items .profile-info-contacts {
+        width: 100%;
+        margin: 0px;
+        align-content: center; }
+  .leftside-main .leftside-personal {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-personal-item {
+      grid-template-columns: 1fr 1fr; }
+  .leftside-main .leftside-qualities {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-qualities-item {
+      grid-template-columns: 1fr 1fr; }
+  .leftside-main .leftside-skills {
+    background-color: #e6e6e6;
+    padding: 10px; }
+    .leftside-main .leftside-skills-item {
+      grid-template-columns: 1fr 1fr; }
+  .rightside-main {
+    background-color: #ffffff; }
+    .rightside-main h3 {
+      background-color: #e6e6e6; }
+    .rightside-main .expirience-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .education-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .hobbies .hobbies-items {
+      grid-template-columns: 1fr 1fr;
+      font-size: 13px; }
+      .rightside-main .hobbies .hobbies-items-img {
+        opacity: 0.6; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-family: Roboto;
+    font-size: 14px; }
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    padding: 10px;
+    background-color: #ffffff; }
+  .grid {
+    display: grid; }
+  .side {
+    display: none; }
+  progress {
+    height: 8px;
+    background-color: #b3b3b3; }
+  h1, h2, h3 {
+    margin: 10px;
+    margin-left: 0px;
+    align-content: center; }
+  p {
+    margin-top: 6.66667px;
+    margin-bottom: 6.66667px; }
+  .year {
+    padding-top: 5px;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 700; }
+  .leftside-main {
+    /*padding: $size-main;*/ }
+    .leftside-main .leftside-contacts {
+      color: #333;
+      font-size: 16px;
+      text-indent: 10px; }
+      .leftside-main .leftside-contacts .profile-photo {
+        transition: transform 1s ease;
+        overflow: hidden;
+        position: relative; }
+        .leftside-main .leftside-contacts .profile-photo-item {
+          min-height: 300px;
+          width: 100%;
+          height: 100%; }
+          .leftside-main .leftside-contacts .profile-photo-item hover {
+            transform: scale(1.2) translate(10px, 22px); }
+      .leftside-main .leftside-contacts .profile-info-items {
+        background-color: #b3b3b3;
+        margin: 0px;
+        grid-template-columns: 0.25fr 0.75fr;
+        transition: background-color 0.5s ease;
+        overflow: hidden;
+        position: relative; }
+        .leftside-main .leftside-contacts .profile-info-items:nth-child(1) {
+          border-bottom: 1px solid #808080; }
+        .leftside-main .leftside-contacts .profile-info-items:nth-child(2) {
+          border-bottom: 1px solid #808080; }
+        .leftside-main .leftside-contacts .profile-info-items:hover {
+          background-color: #d9d9d9; }
+        .leftside-main .leftside-contacts .profile-info-items .profile-info-img {
+          height: 40px;
+          width: 40px;
+          margin: auto;
+          opacity: 0.7; }
+        .leftside-main .leftside-contacts .profile-info-items .profile-info-contacts {
+          width: 100%;
+          margin: 0px;
+          align-content: center; }
+    .leftside-main .leftside-personal {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-personal-item {
+        grid-template-columns: 1fr 1fr; }
+    .leftside-main .leftside-qualities {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-qualities-item {
+        grid-template-columns: 1fr 1fr; }
+    .leftside-main .leftside-skills {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-skills-item {
+        grid-template-columns: 1fr 1fr; }
+  .rightside-main {
+    background-color: #ffffff; }
+    .rightside-main h3 {
+      background-color: #e6e6e6; }
+    .rightside-main .expirience-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .education-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .rightside-main .hobbies {
+      display: none; } }
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-family: Roboto;
+    font-size: 16px; }
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    padding: 10px;
+    background-color: #ffffff; }
+  .grid {
+    display: grid; }
+  .side {
+    display: none; }
+  progress {
+    height: 8px;
+    background-color: #b3b3b3; }
+  h1, h2, h3 {
+    margin: 10px;
+    margin-left: 0px;
+    align-content: center; }
+  p {
+    margin-top: 6.66667px;
+    margin-bottom: 6.66667px; }
+  .year {
+    padding-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 700; }
+  .leftside-main {
+    /*padding: $size-main;*/ }
+    .leftside-main .leftside-contacts {
+      color: #333;
+      font-size: 16px;
+      text-indent: 10px; }
+      .leftside-main .leftside-contacts .profile-photo {
+        transition: transform 1s ease;
+        overflow: hidden;
+        position: relative; }
+        .leftside-main .leftside-contacts .profile-photo-item {
+          min-height: 330px;
+          width: 100%;
+          height: 100%; }
+          .leftside-main .leftside-contacts .profile-photo-item:hover {
+            transform: scale(1.2) translate(10px, 22px); }
+      .leftside-main .leftside-contacts .profile-info-items {
+        background-color: #b3b3b3;
+        margin: 0px;
+        grid-template-columns: 0.25fr 0.75fr;
+        transition: background-color 0.5s ease;
+        overflow: hidden;
+        position: relative; }
+        .leftside-main .leftside-contacts .profile-info-items:nth-child(1) {
+          border-bottom: 1px solid #808080; }
+        .leftside-main .leftside-contacts .profile-info-items:nth-child(2) {
+          border-bottom: 1px solid #808080; }
+        .leftside-main .leftside-contacts .profile-info-items:hover {
+          background-color: #d9d9d9; }
+        .leftside-main .leftside-contacts .profile-info-items .profile-info-img {
+          height: 40px;
+          width: 40px;
+          margin: auto;
+          opacity: 0.7; }
+        .leftside-main .leftside-contacts .profile-info-items .profile-info-contacts {
+          width: 100%;
+          margin: 0px;
+          align-content: center; }
+    .leftside-main .leftside-personal {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-personal-item {
+        grid-template-columns: 1fr 1fr; }
+    .leftside-main .leftside-qualities {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-qualities-item {
+        grid-template-columns: 1fr 1fr; }
+    .leftside-main .leftside-skills {
+      background-color: #e6e6e6;
+      padding: 10px; }
+      .leftside-main .leftside-skills-item {
+        grid-template-columns: 1fr 1fr; }
+  .rightside-main {
+    background-color: #ffffff; }
+    .rightside-main h3 {
+      background-color: #e6e6e6; }
+    .rightside-main .expirience-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+      .rightside-main .expirience-main .expirience-items:nth-child(2) {
+        display: block; }
+    .rightside-main .education-main {
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+      .rightside-main .education-main .education-items:nth-child(2) {
+        display: block; }
+    .rightside-main .hobbies {
+      display: block; } }

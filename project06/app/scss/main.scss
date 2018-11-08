@@ -1,0 +1,760 @@
+$zero-size: 0px;
+$size-main: 10px;
+$size-width: 100;
+$position: center;
+$color-dark: #333;
+$color-grey: #808080;
+$color-blue: #308eee;
+$color-white: #ffffff;
+$font-family-main: Roboto;
+
+@media screen and (min-width:993px) {
+    /////////////////////container///////////////////
+    body {
+        grid-template-columns: 1fr 3fr 1fr;
+        padding: $zero-size;
+        margin: $zero-size;
+        color: $color-dark;
+        font-family: $font-family-main;
+        font-size: $size-main*1.4;
+    }
+
+    .container {
+        margin: auto;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: $size-main;
+        background-color: $color-white;
+        padding: $size-main;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .side {
+        height: 100%;
+        background-color: lighten($color-grey, 10%);
+    }
+
+    progress {
+        height: $size-main*0.8;
+        background-color: lighten($color-grey,20%);
+    }
+
+    h1, h2, h3 {
+        margin: $size-main;
+        margin-left: $zero-size;
+        align-content: $position;
+    }
+
+    p {
+        margin-top: $size-main/1.5;
+        margin-bottom: $size-main/1.5;
+    }
+
+    .year {
+        padding-top: $size-main/2;
+        font-size: $size-main*1.1;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+
+
+    /////////////leftside////////////////
+    .leftside {
+
+        &-main {
+            /////////leftside-contacts///////////
+            .leftside-contacts {
+                color: $color-dark;
+                font-size: $size-main *1.6;
+                text-indent: $size-main;
+
+                .profile {
+
+                    &-photo {
+                        transition: transform 1s ease;
+                        overflow: hidden;
+                        position: relative;
+
+                        &-item {
+                            min-height: $size-width * 3 + px;
+                            width: $size-width + %;
+                            height: $size-width + %;
+
+                            &:hover {
+                                transform: scale(1.2) translate(10px, 22px);
+                            }
+                        }
+                    }
+
+                    &-info {
+
+                        &-items {
+                            background-color: lighten($color-grey, 20%);
+                            margin: $zero-size;
+                            grid-template-columns: 0.25fr 0.75fr;
+                            transition: background-color 0.5s ease;
+                            overflow: hidden;
+                            position: relative;
+
+                            &:nth-child(1) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:nth-child(2) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:hover {
+                                background-color: lighten($color-grey, 35%);
+                            }
+
+                            .profile-info-img {
+                                height: $size-width/2.5 + px;
+                                width: $size-width/2.5 + px;
+                                margin: auto;
+                                opacity: 0.7;
+                            }
+
+
+                            .profile-info-contacts {
+                                width: $size-width + %;
+                                margin: $zero-size;
+                                align-content: $position;
+                            }
+                        }
+                    }
+                }
+            }
+            /////////leftside-personal/////////////
+            .leftside-personal {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-qualities////////////
+            .leftside-qualities {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-skills////////////////
+            .leftside-skills {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+
+    ////////////rightside//////////////////
+    .rightside {
+        &-main {
+            background-color: $color-white;
+            
+            h3 {
+                background-color: lighten($color-grey,40%);
+            }
+            ////////////rightside_expirence//////////////////
+            .expirience {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+
+                    .expirience-name {
+                    }
+                }
+            }
+            ////////////rightside_education//////////////////
+            .education {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+                }
+            }
+            ////////////rightside_hobbies//////////////////
+            .hobbies {
+                .hobbies-items {
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    font-size: $size-main * 1.3;
+
+                    &-img {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    body {
+        padding: $zero-size;
+        margin: $zero-size;
+        color: $color-dark;
+        font-family: $font-family-main;
+        font-size: $size-main*1.4;
+    }
+
+    .container {
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $size-main;
+        padding: $size-main;
+        background-color: $color-white;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .side {
+        display: none;
+    }
+
+    progress {
+        height: $size-main*0.8;
+        background-color: lighten($color-grey,20%);
+    }
+
+    h1, h2, h3 {
+        margin: $size-main;
+        margin-left: $zero-size;
+        align-content: $position;
+    }
+
+    p {
+        margin-top: $size-main/1.5;
+        margin-bottom: $size-main/1.5;
+    }
+
+    .year {
+        padding-top: $size-main/2;
+        font-size: $size-main*1.1;
+        font-style: italic;
+        font-weight: 700;
+    }
+    ////////////leftside//////////////////
+    .leftside {
+
+        &-main {
+            /////////leftside-contacts///////////
+            .leftside-contacts {
+                color: $color-dark;
+                font-size: $size-main *1.6;
+                text-indent: $size-main;
+
+                .profile {
+
+                    &-photo {
+                        transition: transform 1s ease;
+                        overflow: hidden;
+                        position: relative;
+
+
+                        &-item {
+                            min-height: $size-width * 4 + px;
+                            width: $size-width + %;
+                            height: $size-width + %;
+
+                            &:hover {
+                                transform: scale(1.2) translate(10px, 22px);
+                            }
+                        }
+                    }
+
+                    &-info {
+
+                        &-items {
+                            background-color: lighten($color-grey, 20%);
+                            margin: $zero-size;
+                            grid-template-columns: 0.25fr 0.75fr;
+                            transition: background-color 0.5s ease;
+                            overflow: hidden;
+                            position: relative;
+
+                            &:nth-child(1) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:nth-child(2) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:hover {
+                                background-color: lighten($color-grey, 35%);
+                            }
+
+                            .profile-info-img {
+                                height: $size-width/2.5 + px;
+                                width: $size-width/2.5 + px;
+                                margin: auto;
+                                opacity: 0.7;
+                            }
+
+
+                            .profile-info-contacts {
+                                width: $size-width + %;
+                                margin: $zero-size;
+                                align-content: $position;
+                            }
+                        }
+                    }
+                }
+            }
+            /////////leftside-personal/////////////
+            .leftside-personal {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-qualities////////////
+            .leftside-qualities {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-skills////////////////
+            .leftside-skills {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+    ////////////rightside//////////////////
+    .rightside {
+        &-main {
+            background-color: $color-white;
+            
+            h3 {
+                background-color: lighten($color-grey,40%);
+            }
+            ////////////rightside_expirence//////////////////
+            .expirience {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+
+                    .expirience-name {
+                    }
+                }
+            }
+            ////////////rightside_education//////////////////
+            .education {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+                }
+            }
+            ////////////rightside_hobbies//////////////////
+            .hobbies {
+                .hobbies-items {
+                    grid-template-columns: 1fr 1fr;
+                    font-size: $size-main * 1.3;
+
+                    &-img {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+        padding: $zero-size;
+        margin: $zero-size;
+        color: $color-dark;
+        font-family: $font-family-main;
+        font-size: $size-main*1.4;
+    }
+
+    .container {
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $size-main;
+        padding: $size-main;
+        background-color: $color-white;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .side {
+        display: none;
+    }
+
+    progress {
+        height: $size-main*0.8;
+        background-color: lighten($color-grey,20%);
+    }
+
+    h1, h2, h3 {
+        margin: $size-main;
+        margin-left: $zero-size;
+        align-content: $position;
+    }
+
+    p {
+        margin-top: $size-main/1.5;
+        margin-bottom: $size-main/1.5;
+    }
+
+    .year {
+        padding-top: $size-main/2;
+        font-size: $size-main*1.1;
+        font-style: italic;
+        font-weight: 700;
+    }
+    ////////////leftside//////////////////
+    .leftside {
+
+        &-main {
+            /*padding: $size-main;*/
+            /////////leftside-contacts///////////
+            .leftside-contacts {
+                color: $color-dark;
+                font-size: $size-main *1.6;
+                text-indent: $size-main;
+
+                .profile {
+
+                    &-photo {
+                        transition: transform 1s ease;
+                        overflow: hidden;
+                        position: relative;
+
+
+                        &-item {
+                            min-height: $size-width * 3 + px;
+                            width: $size-width + %;
+                            height: $size-width + %;
+
+                            hover {
+                                transform: scale(1.2) translate(10px, 22px);
+                            }
+                        }
+                    }
+
+                    &-info {
+
+                        &-items {
+                            background-color: lighten($color-grey, 20%);
+                            margin: $zero-size;
+                            grid-template-columns: 0.25fr 0.75fr;
+                            transition: background-color 0.5s ease;
+                            overflow: hidden;
+                            position: relative;
+
+                            &:nth-child(1) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:nth-child(2) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:hover {
+                                background-color: lighten($color-grey, 35%);
+                            }
+
+                            .profile-info-img {
+                                height: $size-width/2.5 + px;
+                                width: $size-width/2.5 + px;
+                                margin: auto;
+                                opacity: 0.7;
+                            }
+
+
+                            .profile-info-contacts {
+                                width: $size-width + %;
+                                margin: $zero-size;
+                                align-content: $position;
+                            }
+                        }
+                    }
+                }
+            }
+            /////////leftside-personal/////////////
+            .leftside-personal {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-qualities////////////
+            .leftside-qualities {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-skills////////////////
+            .leftside-skills {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+    ////////////rightside//////////////////
+    .rightside {
+        &-main {
+            background-color: $color-white;
+           
+            h3 {
+                background-color: lighten($color-grey,40%);
+            }
+            ////////////rightside_expirence//////////////////
+            .expirience {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+
+                    .expirience-name {
+                    }
+                }
+            }
+            ////////////rightside_education//////////////////
+            .education {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+                }
+            }
+            ////////////rightside_hobbies//////////////////
+            .hobbies {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    body {
+        padding: $zero-size;
+        margin: $zero-size;
+        color: $color-dark;
+        font-family: $font-family-main;
+        font-size: $size-main*1.6;
+    }
+
+    .container {
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: $size-main;
+        padding: $size-main;
+        background-color: $color-white;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .side {
+        display: none;
+    }
+
+    progress {
+        height: $size-main*0.8;
+        background-color: lighten($color-grey,20%);
+    }
+
+    h1, h2, h3 {
+        margin: $size-main;
+        margin-left: $zero-size;
+        align-content: $position;
+    }
+
+    p {
+        margin-top: $size-main/1.5;
+        margin-bottom: $size-main/1.5;
+    }
+
+    .year {
+        padding-top: $size-main/2;
+        font-size: $size-main*1.3;
+        font-style: italic;
+        font-weight: 700;
+    }
+    ////////////leftside//////////////////
+    .leftside {
+
+        &-main {
+            /*padding: $size-main;*/
+            /////////leftside-contacts///////////
+            .leftside-contacts {
+                color: $color-dark;
+                font-size: $size-main *1.6;
+                text-indent: $size-main;
+
+                .profile {
+
+                    &-photo {
+                        transition: transform 1s ease;
+                        overflow: hidden;
+                        position: relative;
+
+
+                        &-item {
+                            min-height: $size-width * 3.3 + px;
+                            width: $size-width + %;
+                            height: $size-width + %;
+
+                            &:hover {
+                                transform: scale(1.2) translate(10px, 22px);
+                            }
+                        }
+                    }
+
+                    &-info {
+
+                        &-items {
+                            background-color: lighten($color-grey, 20%);
+                            margin: $zero-size;
+                            grid-template-columns: 0.25fr 0.75fr;
+                            transition: background-color 0.5s ease;
+                            overflow: hidden;
+                            position: relative;
+
+                            &:nth-child(1) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:nth-child(2) {
+                                border-bottom: $size-main/10 solid $color-grey;
+                            }
+
+                            &:hover {
+                                background-color: lighten($color-grey, 35%);
+                            }
+
+                            .profile-info-img {
+                                height: $size-width/2.5 + px;
+                                width: $size-width/2.5 + px;
+                                margin: auto;
+                                opacity: 0.7;
+                            }
+
+
+                            .profile-info-contacts {
+                                width: $size-width + %;
+                                margin: $zero-size;
+                                align-content: $position;
+                            }
+                        }
+                    }
+                }
+            }
+            /////////leftside-personal/////////////
+            .leftside-personal {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-qualities////////////
+            .leftside-qualities {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            /////////leftside-skills////////////////
+            .leftside-skills {
+                background-color: lighten($color-grey,40%);
+                padding: $size-main;
+
+                &-item {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+    }
+
+    ////////////rightside//////////////////
+    .rightside {
+        &-main {
+            background-color: $color-white;
+            
+            h3 {
+                background-color: lighten($color-grey,40%);
+            }
+            ////////////rightside_expirence//////////////////
+            .expirience {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+
+                    .expirience-items:nth-child(2) {
+                        display: block;
+                    }
+                }
+            }
+            ////////////rightside_education//////////////////
+            .education {
+
+                &-main {
+                    grid-template-columns: 1fr 2fr;
+                    grid-column-gap: $size-main *2;
+
+                    .education-items:nth-child(2) {
+                        display: block;
+                    }
+                }
+            }
+            ////////////rightside_hobbies//////////////////
+            .hobbies {
+                display: block;
+            }
+        }
+    }
+}
